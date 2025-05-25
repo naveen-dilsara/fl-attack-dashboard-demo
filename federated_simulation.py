@@ -17,7 +17,7 @@ def run_full_simulation_pipeline():
     # Construct the absolute path to the CSV file relative to the script's location
     try:
         current_dir = os.path.dirname(os.path.abspath(__file__))
-        csv_file_path = os.path.join(current_dir, "Framingham.csv")
+        csv_file_path = os.path.join(current_dir, "framingham.csv")
         # print(f"SIM: Attempting to load CSV from: {csv_file_path}") # For debugging
         
         df = pd.read_csv(csv_file_path)
